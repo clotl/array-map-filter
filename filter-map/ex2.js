@@ -25,6 +25,26 @@ Sortie attendue:
 */
 
 function getCampusesTeachingReact(campuses) {
+    return campuses
+        .filter(function(lalala) {
+            return lalala.curriculums.includes("JS/React");
+        })
+        .map(function(town) {
+            return town.city;
+        });
 }
+
+// function getCampusesTeachingReact(campuses) {
+//   return campuses.filter(function(lalala) {
+//       return lalala.curriculums.filter(function(language, index) {
+//           return language[0].includes("JS/React") === true || language[1].includes("JS/React") === true;
+//           });
+
+//   });
+//   return .map(function(town){
+//     return town.city;
+//   });
+
+// }
 
 module.exports = getCampusesTeachingReact;

@@ -50,7 +50,7 @@ Sortie attendue:
 
 */
 
-function getStudentsPerCurriculum(campuses, curriculumName) {
-}
+function getStudentsPerCurriculum(campuses, curriculumName) {}
 
+// campuses.includes;
 module.exports = getStudentsPerCurriculum;
