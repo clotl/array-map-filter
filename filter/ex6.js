@@ -27,6 +27,9 @@ Sortie attendue:
 */
 
 function filterOffensiveComments(comments, bannedWords) {
+    return comments.filter(function(lalala, index) {
+        return lalala.toLowerCase().includes(bannedWords[0]) === false && lalala.toLowerCase().includes(bannedWords[1]) === false;
+    });
 }
 
 // Ne pas modifier l'export
